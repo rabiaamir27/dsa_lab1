@@ -9,7 +9,7 @@ int findFirstOccurrence(const string& text, const string& pattern) {
 
     if (m == 0) return 0; // empty pattern occurs at index 0
 
-    for (int i = 0; i <= n - m; i++) {
+    for (int i = 0; i <= n - m; i++) { 
         int j;
         for (j = 0; j < m; j++) {
             if (text[i + j] != pattern[j])
@@ -27,17 +27,17 @@ int main() {
     string text2 = "machine learning";
     string text3 = "data science";
 
-    cout << "Pattern at the beginning: "
+    cout << "Pattern at the beginning: " //checks at beginning
          << findFirstOccurrence(text1, "artificial") << endl; 
 
-    cout << "Pattern at the end: "
+    cout << "Pattern at the end: "  //checks at end
          << findFirstOccurrence(text2, "ning") << endl; 
 
-    cout << "Pattern not present: "
+    cout << "Pattern not present: " //when pattern isnt present
          << findFirstOccurrence(text3, "python") << endl; 
 
-    cout << "Empty pattern: "
+    cout << "Empty pattern: " //pattern is empty
          << findFirstOccurrence(text1, "") << endl; 
 
-    return 0;
+    return 0; //returns integers
 }
