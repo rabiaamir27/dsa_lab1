@@ -14,7 +14,7 @@ vector<int> findAllIndices(const vector<int>& arr, int key) {
 }
 
 int main() {
-    int n, key;
+    int n, key; 
     cout << "Enter the size of the array: "; //asking user for input
     cin >> n;
 
@@ -35,7 +35,7 @@ int main() {
     } else {
         cout << "Key " << key << " not found in the array.";
     }
-    cout << endl;
+    cout << endl; //shifts to next line
 
     return 0;  //retuns integer
 }
