@@ -20,12 +20,12 @@ int main() {
 
     vector<int> arr(n);
     cout << "Enter " << n << " elements: ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) { //loop for taking input
         cin >> arr[i];
     }
 
     cout << "Enter the key to search: "; //asking user to enter key to search
-    cin >> key;
+    cin >> key; //key input
 
     vector<int> indices = findAllIndices(arr, key); //finding indices
   
