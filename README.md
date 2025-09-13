@@ -1,13 +1,5 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-This line was added locally in conflict-branch.
+Your local changes here
 =======
-This line was added on GitHub in main branch.
->>>>>>> origin/main
-
-This line includes both changes (resolved).
-=======
-#dsa_lab1
-This line was added on GitHub in main branch.
-This line was added locally in conflict-branch.
+Changes from origin/main here
 >>>>>>> origin/main
