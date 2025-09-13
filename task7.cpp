@@ -10,12 +10,12 @@ vector<int> findAllIndices(const vector<int>& arr, int key) {
             indices.push_back(i);
         }
     }
-    return indices;
+    return indices; //returns index
 }
 
 int main() {
     int n, key;
-    cout << "Enter the size of the array: ";
+    cout << "Enter the size of the array: "; //asking user for input
     cin >> n;
 
     vector<int> arr(n);
@@ -24,12 +24,12 @@ int main() {
         cin >> arr[i];
     }
 
-    cout << "Enter the key to search: ";
+    cout << "Enter the key to search: "; //asking user to enter key to search
     cin >> key;
 
-    vector<int> indices = findAllIndices(arr, key);
-
-    if (!indices.empty()) {
+    vector<int> indices = findAllIndices(arr, key); //finding indices
+  
+    if (!indices.empty()) {  //condition if key is empty or non empty
         cout << "Indices of " << key << " in the array: ";
         for (int index : indices) cout << index << " ";
     } else {
@@ -37,6 +37,6 @@ int main() {
     }
     cout << endl;
 
-    return 0;
+    return 0;  //retuns integer
 }
 
